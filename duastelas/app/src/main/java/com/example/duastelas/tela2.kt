@@ -13,7 +13,7 @@ class tela2 : AppCompatActivity() {
         setContentView(R.layout.activity_tela2)
 
         //recebendo valores da tela que chamou
-        val string: String? = intent.getStringExtra("Extra")
+        val string: String? = intent.getStringExtra("Chave")
 
         val texto = findViewById(R.id.textView2) as TextView
         texto.setText(string)
