@@ -4,4 +4,6 @@
     <string name="strBtnGoToTela1">Go to Tela1</string>
     <string name="btnVoltar">Back</string>
     <string name="strBtnVoltar">Back</string>
+    <string name="btnGoto3">Proxima</string>
+    <string name="btnBack1">Volta Inicio</string>
 </resources>
