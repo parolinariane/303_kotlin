@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cores>
+    <cor name ="purple_200">#FFBB86FC</cor>
+    <cor name ="purple_500">#FF6200EE</cor>
+    <cor name ="purple_700">#FF3700B3</cor>
+    <cor name ="teal_200">#FF03DAC5</cor>
+    <cor name ="teal_700">#FF018786</cor>
+    <cor name ="black">#FF000000</cor>
+    <cor name ="white">#FFFFFFFF</cor>
+
+</cores>
