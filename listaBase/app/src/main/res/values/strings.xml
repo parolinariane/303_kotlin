@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">listaBase</string>
+    <string name="btnBack">Back</string>
+    <string name="txtSP" />
+    <string name="txtSaoPaulo">São Paulo</string>
+    <string name="txtValorSP">"Localizado na região Sudeste, possuiu uma economia cafeeira que proporcionou rápido desenvolvimento, e hoje o estado é o principal centro econômico do país.  "</string>
+    <string name="txtRio">Rio de Janeiro</string>
+    <string name="txtValorRJ">Terceiro estado mais populoso do Brasil, localizado no litoral sudeste. Sua diversidade paisagística e cultural atrai milhares
+de turistas.</string>
+    <string name="txtMinas">Minas Gerais</string>
+    <string name="txtValorMG">Minas Gerais é o segundo estado mais populoso do Brasil. Concentra grandes áreas industriais e aglomerados urbanos, além de ser importante na extração de recursos minerais.</string>
+</resources>
