@@ -8,6 +8,7 @@ import android.util.Base64
 import android.util.Log
 import com.example.retrofit3.databinding.ActivityMainBinding
 import com.google.gson.Gson
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -70,19 +71,20 @@ class MainActivity : AppCompatActivity() {
 
             mApiServicePost = ApiClient.client.create(ApiServicePost::class.java)
 
-            dadosI = DadosI(ra = "22531" , lat = "1", lon = "1", img = src)
-            var gson = Gson()
+            dadosI = DadosI(ra = "999" , lat = "-22.9015117", lon = "-47.0717623", img = src)
+
+            var gson = Gson().newBuilder().disableHtmlEscaping().create()
             var str = gson.toJson(dadosI)
 
 
 
             val call = mApiServicePost!!.sendDados(str)
-            call!!.enqueue(object : Callback<Resposta>{
-                override fun onResponse(call: Call<Resposta>, response: Response<Resposta>) {
-                    Log.d("Resposta", "Resp: " + response.body()!!)
+            call!!.enqueue(object :Callback<ResponseBody>{
+                override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+                    Log.d("Resposta", "Resp: " + response.body().toString()!!)
                 }
 
-                override fun onFailure(call: Call<Resposta>, t: Throwable) {
+                override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                     Log.e("Erro", "Got Error: " + t.localizedMessage)
 
                 }

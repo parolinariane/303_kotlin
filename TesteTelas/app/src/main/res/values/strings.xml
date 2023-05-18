@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TesteTelas</string>
+    
+    <string name="hint_start">Iniciar Caça ao Tesouro</string>
+</resources>
