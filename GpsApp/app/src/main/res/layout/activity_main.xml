@@ -14,8 +14,7 @@
         android:text="Coordenada"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/getLocation"
@@ -24,7 +23,7 @@
         android:layout_below="@+id/txtCoord"
         android:layout_centerInParent="true"
         android:layout_marginTop="40dp"
-        android:text="Obtem coordenada"/>
+        android:text="Obtem coordenada" />
 
 
 </RelativeLayout>

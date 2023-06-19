@@ -4,51 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
+
+    <!-->app:layout_constraintBottom_toBottomOf="@+id/containerTop"
+        app:layout_constraintEnd_toEndOf="@+id/containerTop"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/containerTop"
+        app:layout_constraintTop_toTopOf="@+id/containerTop"<!-->
+
 
     <View
         android:id="@+id/containerTop"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="414dp"
+        android:layout_height="194dp"
+        android:background="@drawable/background_top"
         app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="@+id/containerTop"
-        app:layout_constraintEnd_toEndOf="@+id/containerTop"
-        app:layout_constraintStart_toStartOf="@+id/containerTop"
-        app:layout_constraintTop_toTopOf="@+id/containerTop"
-        app:srcCompat="@drawable/logo1" />
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnPgInicial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_margin="40dp"
+        android:layout_marginTop="528dp"
         android:background="@drawable/background_button"
         android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:padding="15dp"
-        android:text="Iniciar Caça ao Tesouro"
+        android:paddingRight="4dp"
+        android:text=""
         android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="378dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
-        />
+        app:layout_constraintTop_toTopOf="@+id/containerTop"
+        app:layout_constraintVertical_bias="0.797"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="416dp"
+        android:layout_height="120dp"
+        android:background="@drawable/background_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPgInicial"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="225dp"
+        android:layout_height="243dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerTop"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/photo_5143673080621673234_m" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
